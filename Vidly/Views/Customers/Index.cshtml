@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customers</h2>
+<h2></h2>
+<button id="newcus" class="btn btn-primary">New Custommer</button>
+<h2></h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Membership Type</th>
+            <th>Discount Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cus in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink((string)cus.Name,"Edit","Customers",new {id=cus.Id },null)</td>
+                <td>@cus.MembershipType.Name</td>
+                <td>@cus.MembershipType.DiscountRate%</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts
+    {
+        <script>
+            $(document).ready(function () {
+                $("#newcus").on("click", function ()
+                {
+                    document.location = '@Url.Action("New","Customers")';
+                })
+            })
+        </script>
+    }
+

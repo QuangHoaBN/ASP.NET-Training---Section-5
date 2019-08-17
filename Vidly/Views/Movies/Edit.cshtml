@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+@if (Model.GenreId != null)
+{
+    <p>Genre: @Model.Genre.Name</p>
+}
+@if (Model.ReleaseDate != null)
+{
+    <p>Release Date: @Model.ReleaseDate</p>
+}
+@if (Model.DateAdd != null)
+{
+    <p>DateAdd: @Model.DateAdd</p>
+}
+@if (Model.Stock != null)
+{
+    <p>Num of Stock: @Model.Stock</p>
+}
+
