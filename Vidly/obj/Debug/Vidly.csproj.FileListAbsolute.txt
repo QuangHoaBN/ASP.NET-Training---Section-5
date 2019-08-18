@@ -114,3 +114,11 @@ C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixCustomer.resources
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\AutoMapper.xml
