@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Vidly.Dtos;
 using Vidly.Models;
+using System.Data.Entity;
 
 namespace Vidly.Controllers.Api
 {
@@ -18,13 +19,17 @@ namespace Vidly.Controllers.Api
             _context = new ApplicationDbContext();
         }
         //GET /api/customers
-        public IEnumerable<CustomerDto> GetCustomers()
+        public IHttpActionResult GetCustomersDtos()
         {
-            return _context.Customers.ToList().Select(Mapper.Map<Customer,CustomerDto>);
+            var cusDtos = _context.Customers
+                .Include(c => c.MembershipType)
+                .ToList()
+                .Select(Mapper.Map<Customer, CustomerDto>);
+            return Ok(cusDtos);
         }
 
         //Get /api/customers/1
-        public IHttpActionResult GetCustomers(int id)
+        public IHttpActionResult GetCustomersDtos(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c=>c.Id==id);
             if (customer == null)
@@ -48,27 +53,29 @@ namespace Vidly.Controllers.Api
         
         //PUT /api/customers/1
         [HttpPut]
-        public void UpdateCustomer(int id,CustomerDto customerDto)
+        public IHttpActionResult UpdateCustomer(int id,CustomerDto customerDto)
         {
             if (!ModelState.IsValid)
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
 
             var cusIndB = _context.Customers.SingleOrDefault(c => c.Id == id);
             if (cusIndB == null)
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                return NotFound();
 
             Mapper.Map(customerDto,cusIndB);
             _context.SaveChanges();
+            return Ok();
         }
         [HttpDelete]
         //DELETE /api/customers/1
-        public void DeleteCustomer(int id)
+        public IHttpActionResult DeleteCustomer(int id)
         {
             var cusInDb = _context.Customers.SingleOrDefault(c=>c.Id==id);
             if (cusInDb == null)
-                throw new HttpResponseException(HttpStatusCode.NotFound);
+                return NotFound();
             _context.Customers.Remove(cusInDb);
             _context.SaveChanges();
+            return Ok();
         }
     }
 }
