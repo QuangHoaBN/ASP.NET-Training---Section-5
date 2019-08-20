@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44367</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -235,6 +235,22 @@
     <Compile Include="Migrations\201908171628342_FixCustomer.Designer.cs">
       <DependentUpon>201908171628342_FixCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908200250368_SeedUsers.cs" />
+    <Compile Include="Migrations\201908200250368_SeedUsers.Designer.cs">
+      <DependentUpon>201908200250368_SeedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908200310023_AddDrivingLicense.cs" />
+    <Compile Include="Migrations\201908200310023_AddDrivingLicense.Designer.cs">
+      <DependentUpon>201908200310023_AddDrivingLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908200437446_AddPhone.cs" />
+    <Compile Include="Migrations\201908200437446_AddPhone.Designer.cs">
+      <DependentUpon>201908200437446_AddPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908200543314_AddPhone1.cs" />
+    <Compile Include="Migrations\201908200543314_AddPhone1.Designer.cs">
+      <DependentUpon>201908200543314_AddPhone1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -246,6 +262,11 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\StockRange1to20.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\MovieFormViewModel.cs" />
@@ -425,6 +446,10 @@
     <Content Include="Content\DataTables\css\semanticui.scss" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -602,6 +627,15 @@
     <EmbeddedResource Include="Migrations\201908171628342_FixCustomer.resx">
       <DependentUpon>201908171628342_FixCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908200250368_SeedUsers.resx">
+      <DependentUpon>201908200250368_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908200310023_AddDrivingLicense.resx">
+      <DependentUpon>201908200310023_AddDrivingLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908200437446_AddPhone.resx">
+      <DependentUpon>201908200437446_AddPhone.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -621,7 +655,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52447</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52447/</IISUrl>
+          <IISUrl>https://localhost:44367/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -101,6 +101,7 @@ namespace Vidly.Controllers
             };
             return View("New",viewModel);
         }
+        //GET /movies/index
         public ViewResult Index()
         {
             return View();

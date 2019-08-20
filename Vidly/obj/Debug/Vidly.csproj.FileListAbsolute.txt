@@ -116,6 +116,9 @@ C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthdayCu
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenreAndMovie.resources
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixNameMovie.resources
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixCustomer.resources
+C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
+C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicense.resources
+C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhone.resources
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
