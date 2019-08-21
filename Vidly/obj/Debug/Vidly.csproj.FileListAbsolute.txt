@@ -125,3 +125,8 @@ C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.pdb
 C:\Users\ronna\source\repos\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\Glimpse.Ado.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\Glimpse.AspNet.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\Glimpse.Core.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\Glimpse.EF6.dll
+C:\Users\ronna\source\repos\Vidly\Vidly\bin\Glimpse.Mvc5.dll
